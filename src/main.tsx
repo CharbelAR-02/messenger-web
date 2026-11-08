@@ -7,8 +7,10 @@ import { queryClient } from '@/app/query-client'
 import { router } from '@/app/router'
 import { setupEcho } from '@/features/realtime/echo'
 import './index.css'
+import { setupApi } from './app/setup-api'
 
 setupEcho()
+setupApi()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
